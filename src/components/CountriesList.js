@@ -36,17 +36,17 @@ import CountryDetails from './CountryDetails'
 
             <div class="container">
                 <div class="row">
-                     <div class="col">
-                        <h3>All countries here:</h3>
+                     <div class="col-6 col-md-4">
+                        {/* <h3>All countries here:</h3> */}
 
                         {
                             allCountries.map ((country, index) => {
                                 console.log(country)
                                 return (
-                                     <div class="container-country" key={index}>
-                                        <Link to={'/country/${country.cca3}'}> 
-                                            <div>{country.flag}</div> 
-                                            <p>{country.name.common}</p>
+                                     <div key={index}>
+                                        <Link class="container-country" to={'/country/${country.cca3}'}> 
+                                            <div class="flag">{country.flag}</div> 
+                                            <p class="name-in-list">{country.name.common}</p>
                                         </Link>  
                                     </div>
                                                 

@@ -6,9 +6,9 @@ class Navbar extends Component {
 
         return (
 
-            <div> 
+            <div class="nav-bar"> 
 
-                <h1>LAB - WikiCountries</h1>
+                <h6>WikiCountries</h6>
             
             </div>
 

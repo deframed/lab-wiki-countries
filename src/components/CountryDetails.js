@@ -1,66 +1,66 @@
-import React, { Component } from 'react'
-import countries from '../countries.json'
-import CountryDetails from './CountryDetails'
+// import React, { Component } from 'react'
+// import countries from '../countries.json'
+// import CountryDetails from './CountryDetails'
 
 
 
-class CountryDetails extends Component {
+// class CountryDetails extends Component {
 
-    state = {
-        country: countries
-    }
+//     state = {
+//         country: countries
+//     }
 
-    getCountry = () => {
-        let cca3 = this.props.match.params.country.cca3
+//     getCountry = () => {
+//         let cca3 = this.props.match.params.country.cca3
 
-        fetch("../countries.json")
+//         fetch("../countries.json")
 
-        .then((res) => {
+//         .then((res) => {
 
-            let country = {
-                name: country.name.common,
-                capital: country.capital,
-                area: country.area
+//             let country = {
+//                 name: country.name.common,
+//                 capital: country.capital,
+//                 area: country.area
 
-            }
+//             }
 
-            this.setState({
-                country: country
-            })
-        })
+//             this.setState({
+//                 country: country
+//             })
+//         })
     
-    } 
+//     } 
 
-    componentDidMount() {
-        console.log("Component DidMount")
-        this.getCountry
+//     componentDidMount() {
+//         console.log("Component DidMount")
+//         this.getCountry
 
-    }
+//     }
 
-    render() {
+//     render() {
 
        
 
-        return (
-            <div>
-                <h2>{this.name.common}</h2>
-                <h4>Capital {this.capital}</h4>
-                <h4>Area {this.area}</h4>
-                <div>
-                    <h4>Borders </h4>
+//         return (
+//             <div>
+//                 <h2>{this.name.common}</h2>
+//                 <h4>Capital {this.capital}</h4>
+//                 <h4>Area {this.area}</h4>
+//                 <div>
+//                     <h4>Borders </h4>
                        
-                </div>
+//                 </div>
 
 
-            </div>
+//             </div>
 
-        )
+//         )
 
 
 
-    }
+//     }
         
-}
+// }
 
 
-export default CountryDetails;
+// export default CountryDetails;
